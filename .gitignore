@@ -1,0 +1,93 @@
+# ---------- VSCode ----------
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# virtual envs
+.venv/
+venv/
+env/
+.conda/
+.venv*/
+.env
+.env.*
+
+# packaging / build
+build/
+dist/
+downloads/
+.eggs/
+*.egg-info/
+*.egg
+*.manifest
+*.spec  # pyinstaller
+
+# testing / tooling caches
+.mypy_cache/
+.pytest_cache/
+.tox/
+.nox/
+.cache/
+.pyre/
+.pytype/
+.dmypy.json
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+htmlcov/
+
+# logs
+logs/
+*.log
+
+# ---------- ML / PyTorch outputs ----------
+runs/
+checkpoints/
+models/
+out/
+out_vec/
+**/*.pth
+**/*.pt
+**/*.onnx
+
+# ---------- Data (keep small samples only) ----------
+data/raw/
+data/tmp/
+data/cache/
+*.npy
+*.npz
+!data/sample_*_vec.npz
+!data/sample_*.npz
+!data/README.md
+
+# ---------- Blender (keep main .blend, ignore autosaves) ----------
+*.blend1
+*.blend2
+*.blend@
+*.blend?
+
+# ---------- Node (npx 등 사용 시) ----------
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------- OS-specific ----------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS (협업 대비)
+.DS_Store
+.AppleDouble
+.LSOverride
